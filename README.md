@@ -14,6 +14,7 @@
 # Changelog
 
 - 1.1.0 Initial Release  ( Future Updates Planned stay Tuned )
+- 1.1.1 Added Battlepass Support MMS-Battlepass
 
 # installation 
 

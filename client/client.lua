@@ -32,6 +32,7 @@ Citizen.CreateThread(function()
         bsped:Freeze()
         bsped:SetHeading(v.NpcHeading)
         bsped:Invincible()
+        SetBlockingOfNonTemporaryEvents(bsped:GetPed(), true)
         end
     end
     while true do

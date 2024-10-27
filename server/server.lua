@@ -61,14 +61,20 @@ RegisterServerEvent('mms-bottleshooting:server:AddHighscore',function(Difficulty
                 local oldamount = result[1].easyfinish
                 local newamount = oldamount + 1
                 MySQL.update('UPDATE `mms_bottleshooting` SET easyfinish = ? WHERE charidentifier = ?',{newamount, charidentifier})
+                local EXPGain = Config.EasyEXP
+                BattlepassReward (src,EXPGain)
             elseif Difficulty == 2 then
                 local oldamount = result[1].middlefinish
                 local newamount = oldamount + 1
                 MySQL.update('UPDATE `mms_bottleshooting` SET middlefinish = ? WHERE charidentifier = ?',{newamount, charidentifier})
+                local EXPGain = Config.MiddleEXP
+                BattlepassReward (src,EXPGain)
             elseif Difficulty == 3 then
                 local oldamount = result[1].hardfinish
                 local newamount = oldamount + 1
                 MySQL.update('UPDATE `mms_bottleshooting` SET hardfinish = ? WHERE charidentifier = ?',{newamount, charidentifier})
+                local EXPGain = Config.HardEXP
+                BattlepassReward (src,EXPGain)
             end
         else
             if Difficulty == 1 then
@@ -120,6 +126,13 @@ RegisterServerEvent('mms-bottleshooting:server:gethighscore',function()
         end)
 end)
 
+-------------------------------- Battlepass Reward ------------------------------------
+
+function BattlepassReward (src,EXPGain)
+    if Config.BattlepassActive then
+        TriggerEvent('mms-battlepass:server:GainExp',src,EXPGain)
+    end
+end
 
 --------------------------------------------------------------------------------------------------
 -- start version check

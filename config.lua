@@ -4,6 +4,13 @@ Config.defaultlang = "de_lang" -- Set Language (Current Languages: "en_lang" Eng
 
 -----------------------------------------------------------------------------------------------------
 
+----- mms-Battlepass Settings
+
+Config.BattlepassActive = true
+Config.EasyEXP = 15
+Config.MiddleEXP = 30
+Config.HardEXP = 50
+
 Config.StartBsBlips = true
 Config.CreateBsNPC = true
 
