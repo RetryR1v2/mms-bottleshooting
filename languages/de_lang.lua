@@ -1,7 +1,7 @@
 Locales["de_lang"] = {
     StartBsBlip = 'Schieß Stand',
     PromptName = 'Schieß Stand',
-    BoardHeader = 'The Heartland Revengers Schieß Stand',
+    BoardHeader = 'Tal der Hoffnung Schieß Stand',
     StartEasy = 'Einfach ',
     StartMiddle = 'Mittel ',
     StartHard = 'Schwer ',
@@ -16,7 +16,7 @@ Locales["de_lang"] = {
     TargetsHit = ' Zielen Getroffen',
     AllTargets = 'Glückwunsch Alles Abgeräumt!!!',
     NoHighscoreYet = 'Aktuell gibt es keine Einträge',
-    HighscoresHeader= 'The Heartland Revengers Bestenliste',
+    HighscoresHeader= 'Tal der Hoffnung Bestenliste',
     Easy = ' Einfach: ',
     Middle = ' Mittel: ',
     Hard = ' Schwer: ',
